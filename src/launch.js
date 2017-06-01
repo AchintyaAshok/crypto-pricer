@@ -21,7 +21,7 @@ let findPricing = (primaryCurrency, secondaryCurrencies, onCompletion) => {
         {
             if(response[currency] !== undefined)
             {
-                currenciesFound.push(`${response[currency]}${currency}`);
+                currenciesFound.push(`${response[currency]} ${currency}`);
             }
 
             if(buyPriceTriggers[currency] !== undefined && buyPriceTriggers[currency] >= response[currency])
